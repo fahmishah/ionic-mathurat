@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+
 page-home {
+
+    ion-navbar {
+        font-family: 'Lora', serif;
+        text-transform: uppercase;
+        letter-spacing: 0.14em; 
+        color: #ecf0f1;
+      }
+    
+    .scroll-content {
+        padding-top: 0;
+    }
+    
+
+    .content {
+        background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+        color: #ecf0f1;
+    }
+    
+    ion-slides { height: initial; }
+
+    .mathurat {
+    font-family: "ScheherazadeRegOT" !important;
+    font-size: 33px;
+    line-height: 41px;
+    padding: 50px 30px 0 30px;
+    }
+
+    .translation {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 21px;
+    padding: 10px 30px 0px 30px;
+    }
+
+    
 
 }

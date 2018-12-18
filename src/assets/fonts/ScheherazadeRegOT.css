@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ScheherazadeRegOT';
+    src: url('fonts/ScheherazadeRegOT.eot');
+    src: url('fonts/ScheherazadeRegOT.eot') format('embedded-opentype'),
+         url('fonts/ScheherazadeRegOT.woff2') format('woff2'),
+         url('fonts/ScheherazadeRegOT.woff') format('woff'),
+         url('fonts/ScheherazadeRegOT.ttf') format('truetype'),
+         url('fonts/ScheherazadeRegOT.svg#ScheherazadeRegOT') format('svg');
+}

@@ -38,8 +38,13 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  mathurat:   #50c9c3,
 );
+
+$toolbar-ios-title-font-size: 1.7rem;
+$toolbar-md-title-font-size: 1.7rem;
+$toolbar-wp-title-font-size: 1.5rem;
 
 
 // App iOS Variables

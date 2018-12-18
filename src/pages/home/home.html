@@ -1,17 +1,36 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+<ion-header no-shadow>
+  <ion-navbar >
+    <ion-title text-center>al-Mathurat</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-slides pager paginationType="progress" parallax="true">
+
+    <ion-slide *ngFor="let item of content" >
+    
+           
+      <ion-grid>
+          <ion-row align-items-end>
+              <ion-label><ion-badge color="mathurat" float-left>{{item.count}} x</ion-badge></ion-label>
+              <ion-label *ngIf="item.time == 1"><ion-badge color="mathurat" float-right>Morning</ion-badge></ion-label>
+              <ion-label *ngIf="item.time == 2"><ion-badge color="mathurat" float-right>Evening</ion-badge></ion-label>
+              <ion-label *ngIf="item.time == 3"></ion-label>
+          </ion-row>    
+          <ion-row>
+            <ion-col>
+                <div class="mathurat">{{item.text}}</div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+                <div class="translation">{{item.translation}}</div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-slide>
+  
+  </ion-slides>
+
+
 </ion-content>
